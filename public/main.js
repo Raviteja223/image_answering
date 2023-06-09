@@ -43,7 +43,7 @@ function uploadImage() {
                 "Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*"
             },
-            body: JSON.stringify({ img: GCPData.result, prompt: prompt }),
+            body: JSON.stringify({ fileUrl: GCPData.result, prompt: prompt }),
         }).then(async (replicate_response) => {
             const replicateData = await replicate_response.json();
             let sentence = "";
