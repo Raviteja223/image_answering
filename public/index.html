@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="application/javascript" src="./main.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>Input</h4>
+                <div>
+                    <div>
+                        <img class="input" id="inputimg"
+                            src="https://replicate.delivery/mgxm/59d9390c-b415-47e0-a907-f81b0d9920f1/187400315-87a90ac9-d231-45d6-b377-38702bd1838f.jpg">
+                    </div>
+                    <input type="text" id="inputprompt" placeholder="Enter Prompt" style="margin: 10px; width: 80%;">
+                    <div style="margin: 10px;">
+                        <input type="file" name="file" id="file" accept="image/*" onchange="loadFile(event)">
+                    </div>
+                    <button style="margin-left: 10px;" type="submit" onclick="uploadImage()">
+                        <span class="">Submit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="">Output</h4>
+                <div class="">
+                    <output data-prediction-output="true" class="">
+                        <figure>
+                            <div>
+                                <!-- Big Text area -->
+                                <textarea id="outputtext" name="w3review" rows="4"
+                                    cols="50">Please wait........</textarea>
+                            </div>
+                        </figure>
+                    </output>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
