@@ -37,7 +37,7 @@ function uploadImage() {
         const GCPData = await GCPresponse.json();
         const prompt = document.getElementById("inputprompt").value;
         console.log(GCPData, "GCPData");
-        fetch("https://image-enhancement-backend-raviteja-yl.vercel.app", {
+        fetch("https://image-enhancement-backend-raviteja-yl.vercel.app/img_answering", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
